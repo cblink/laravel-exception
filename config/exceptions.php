@@ -11,7 +11,7 @@ use Cblink\LaravelException\Render\AuthenticationRender;
 return [
 
     // 语言包，对应messages中的语言
-    'language' => 'zh-cn',
+    'lang' => env('EXCEPTION_LANGUAGE', 'zh-cn'),
 
     // 返回参数配置
     'response' => [

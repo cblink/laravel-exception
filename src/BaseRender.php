@@ -48,6 +48,8 @@ abstract class BaseRender
      */
     final protected function getSystemErrMsg()
     {
-        return Arr::get(app('error-message'), $this->getErrCode(), '');
+        $messages = config(sprintf('exceptions.messages.%s', config('exceptions.lang', 'zh-cn')), []);
+
+        return Arr::get($messages, $this->getErrCode(), '');
     }
 }
