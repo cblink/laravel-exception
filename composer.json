@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "cblink/laravel-dto": "^0.3.0|^1.0.0"
+        "cblink/laravel-dto": "^0.3.0|^1.0.0|^2.0.0"
     },
     "require-dev": {
         "orchestra/testbench": "^3.7|^3.8|^4.0|^5.0"
